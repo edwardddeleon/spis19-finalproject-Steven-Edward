@@ -93,6 +93,19 @@ def parseInput(user):
 trainAll()
 
 while True:
-	print("Enter a Twitter username: ")
-	user = input()
-	parseInput(user)
+        print("Would you like to use the following usernames?")
+        print()
+        for model in models:
+                print(model)
+        print("Yes (1) or No (0)?")
+        response = strip(input())
+        if response == "1":
+            print("Enter the desired Twitter Username")
+        elif response == "0":
+            print("Enter a username from the list")
+        else:
+            pass
+
+	#print("Enter a Twitter username: ")
+	#user = input()
+	#parseInput(user)
