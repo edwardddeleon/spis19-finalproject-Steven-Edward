@@ -1,7 +1,5 @@
 import twint
 import csv
-import multiprocessing
-multiprocessing.set_start_method("spawn")
 
 # Users to scrape Tweets from
 usernames = ["BarackObama", "HillaryClinton", "AOC", "SenSanders", "realDonaldTrump", "MittRomney", "senatemajldr", "benshapiro"]
@@ -52,5 +50,5 @@ def scrape_clean():
 		except IndexError:
 			pass
 
-
-scrape_clean()
+scrape("faoifaeiohiaierq31")
+#scrape_clean()
